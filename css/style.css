@@ -158,11 +158,15 @@ legend {
     color: inherit;
 }
 
+/* Comman styles */
+.base-container {
+    display: grid;
+    grid-template-rows: 2fr auto 2fr;
+}
+
 /* Devansh Styling (dv prefix) */
 .dv-container {
-    display: grid;
     grid-template-columns: 27% auto;
-    grid-template-rows: 2fr auto 2fr;
 }
 
 .dv-header {
