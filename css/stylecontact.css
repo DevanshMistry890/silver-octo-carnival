@@ -97,13 +97,12 @@ img {
   max-width: 100%;
 }
 .contact-wrapper {
-  background-image: linear-gradient(90deg, #01070e, #4e545a);
-  /* background: url(img/background.png); */
+  /* background-image: linear-gradient(90deg, #01070e, #4e545a); */
   background-size: contain;
   background-position: center;
   height: auto;
   max-width: 100%;
-  animation: hue 20s infinite alternate;
+  /* animation: hue 20s infinite alternate; */
   text-align: center;
 }
 
@@ -219,8 +218,8 @@ p {
 
 @media (min-width: 40em) {
   .grid-1-2-col {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    column-gap: 3rem;
     justify-content: centers;
     align-items: center;
   }
@@ -284,7 +283,7 @@ iframe {
 }
 .contact-in-touch-right {
   display: block;
-  max-width: min(300px, 100%-4rem);
+  max-width: min(400px, 100%-4rem);
   height: auto;
   background: var(--clr-neutral-300);
 }
@@ -297,7 +296,7 @@ iframe {
   text-align: starts;
   gap: 1.875rem;
   padding: 1rem 3.6rem;
-  background: var(--clr-neutral-800);
+  background: var(--clr-neutral-700);
   border-image: var(--btn-linear);
   border-radius: 0.5rem;
   border-bottom: 2px solid transparent;
@@ -338,10 +337,14 @@ iframe {
   justify-content: space-around;
   font-size: var(--fs-600);
   gap: 0.3rem;
-  padding: 0.3rem var(--spacer);
+  padding: 0 var(--spacer);
   margin-block: 2rem;
   border: 1px solid var(--clr-neutral-600);
   border-radius: 1rem;
+}
+.detail-1 i,
+.detail-2 i {
+  padding-top: 0.5rem;
 }
 form {
   padding: 1rem;
@@ -350,8 +353,9 @@ form {
 }
 form input::placeholder,
 form textarea::placeholder {
-  color: var(--clr-neutral-400);
-  font-size: var(--fs-500);
+  color: var(--clr-neutral-500);
+  letter-spacing: 0.1rem;
+  opacity: 0.5;
 }
 
 form .submit-btn:hover {
@@ -363,14 +367,34 @@ form:focus-within {
 .contact-services-form {
   display: grid;
   gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  max-width: 100%;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  column-gap: 0.5rem;
+  margin-inline: 1rem;
+}
+.form-group-row {
+  grid-column: 1/ -1;
+  grid-template-columns: 8rem 1fr;
+}
+.form-group-select {
+  flex-direction: column;
+}
+.contact-services-form label {
+  margin-bottom: 0.6rem;
 }
 .contact-services-form input,
-.contact-services-form textarea {
+.contact-services-form textarea,
+.contact-services-form select {
   border: none;
   outline: none;
   padding: 1rem;
   font-size: 0.9rem;
-  background: var(--clr-neutral-800);
+
+  background: var(--clr-neutral-700);
   color: var(--clr-neutral-400);
   border-radius: 0.6rem;
 }
