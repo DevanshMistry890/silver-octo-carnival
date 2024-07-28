@@ -136,20 +136,20 @@
           <form class="contact-services-form">
             <div class="form-group">
               <label for="fName">First Name:</label>
-              <input type="text" id="fName" name="fName" required>
+              <input type="text" id="fName" name="fName" autocomplete="on" required>
 
             </div>
             <div class="form-group">
               <label for="lName">Last Name:</label>
-              <input type="text" id="lName" name="lName">
+              <input type="text" id="lName" name="lName" autocomplete="on">
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" autocomplete="on" required>
             </div>
             <div class="form-group">
               <label for="phone">Phone Number:</label>
-              <input type="phone" id="phone" name="phone" placeholder="(optional)">
+              <input type="phone" id="phone" name="phone" placeholder="(optional)" autocomplete="on">
             </div>
             <div class="form-group">
               <label for="subject">Subject:</label>
@@ -157,7 +157,7 @@
             </div>
             <div class="form-group">
               <label for="company">Company/Organization:</label>
-              <input type="text" id="company" name="company" placeholder="(optional)">
+              <input type="text" id="company" name="company" placeholder="(optional)" autocomplete="off">
             </div>
             <div class="form-group form-group-select">
               <label for="blockchainArea">Blockchain Area of Interest:</label>
@@ -169,8 +169,8 @@
               </select><br>
             </div>
             <div class="form-group form-group-select">
-              <label for="blockchainArea">How did you hear about us?</label>
-              <select id="blockchainArea">
+              <label for="hearAbout">How did you hear about us?</label>
+              <select id="hearAbout">
                 <option value="friends">Friends</option>
                 <option value="Instructor">instructor</option>
                 <option value="socialMedia">social media</option>
