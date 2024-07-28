@@ -1,0 +1,33 @@
+/* Glassmorphism Style */
+.glassmorphism {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.glassmorphism::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(at 46.24% 75.46%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%),
+                      radial-gradient(at 56.86% 51.20%, hsla(253.62, 94.22%, 66.08%, 1) 0%, hsla(253.62, 94.22%, 66.08%, 0) 100%),
+                      radial-gradient(at 65.66% 82.21%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%),
+                      radial-gradient(at 44.96% 92.09%, hsla(253.62, 94.22%, 66.08%, 1) 0%, hsla(253.62, 94.22%, 66.08%, 0) 100%),
+                      radial-gradient(at 69.25% 33.40%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%),
+                      radial-gradient(at 72.97% 93.51%, hsla(253.62, 94.22%, 66.08%, 1) 0%, hsla(253.62, 94.22%, 66.08%, 0) 100%),
+                      radial-gradient(at 97.13% 30.94%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: inherit;
+    z-index: -1;
+}
