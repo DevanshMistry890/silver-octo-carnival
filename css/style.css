@@ -1,73 +1,244 @@
-.container {
+/* Root Variables */
+:root {
+    --blue: #0056B3;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #A91E2C;
+    --orange: #fd7e14;
+    --yellow: #F0B400;
+    --green: #18634B;
+    --teal: #0056B3;
+    --cyan: #17a2b8;
+    --white: #ECF0F3;
+    --gray: #93a5be;
+    --gray-dark: #525480;
+    --primary: #1800B4;
+    --secondary: #2D4CC8;
+    --success: #18634B;
+    --info: #0056B3;
+    --warning: #F0B400;
+    --danger: #A91E2C;
+    --light: #D1D9E6;
+    --dark: #31344b;
+    --default: #262833;
+    --black: #262833;
+    --purple: #6f42c1;
+    --gray-100: #f3f7fa;
+    --gray-200: #fafbfe;
+    --gray-300: #e6e7ee;
+    --gray-400: #D1D9E6;
+    --gray-500: #b1bcce;
+    --gray-600: #93a5be;
+    --gray-700: #66799e;
+    --gray-800: #525480;
+    --slack: #3aaf85;
+    --font-family-1: Syne, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-2: Nunito Sans, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --background1: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1)),
+        radial-gradient(at 46.24% 75.46%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%),
+        radial-gradient(at 56.86% 51.20%, hsla(253.62, 94.22%, 66.08%, 1) 0%, hsla(253.62, 94.22%, 66.08%, 0) 100%),
+        radial-gradient(at 65.66% 82.21%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%),
+        radial-gradient(at 44.96% 92.09%, hsla(253.62, 94.22%, 66.08%, 1) 0%, hsla(253.62, 94.22%, 66.08%, 0) 100%),
+        radial-gradient(at 69.25% 33.40%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%),
+        radial-gradient(at 72.97% 93.51%, hsla(253.62, 94.22%, 66.08%, 1) 0%, hsla(253.62, 94.22%, 66.08%, 0) 100%),
+        radial-gradient(at 97.13% 30.94%, hsla(293.85, 58.21%, 73.73%, 1) 0%, hsla(293.85, 58.21%, 73.73%, 0) 100%);
+    --background2: radial-gradient(at 1.9432302102343035% 49.32508303940353%, hsla(320.7920792079208, 86.32478632478634%, 77.05882352941175%, 1) 0%, hsla(320.7920792079208, 86.32478632478634%, 77.05882352941175%, 0) 100%),
+        radial-gradient(at 66.21882781540056% 66.79796625402585%, hsla(257.94392523364485, 91.45299145299145%, 77.05882352941175%, 1) 0%, hsla(257.94392523364485, 91.45299145299145%, 77.05882352941175%, 0) 100%),
+        radial-gradient(at 8.804635935176574% 36.619588372996816%, hsla(253.4545454545455, 92.17877094972067%, 64.90196078431373%, 1) 0%, hsla(253.4545454545455, 92.17877094972067%, 64.90196078431373%, 0) 100%),
+        radial-gradient(at 47.27131536661457% 52.80345210938449%, hsla(320.7920792079208, 86.32478632478634%, 77.05882352941175%, 1) 0%, hsla(320.7920792079208, 86.32478632478634%, 77.05882352941175%, 0) 100%),
+        radial-gradient(at 10.493386550871664% 70.29006071455296%, hsla(257.94392523364485, 91.45299145299145%, 77.05882352941175%, 1) 0%, hsla(257.94392523364485, 91.45299145299145%, 77.05882352941175%, 0) 100%),
+        radial-gradient(at 2.8527302972832125% 78.42241660255036%, hsla(253.4545454545455, 92.17877094972067%, 64.90196078431373%, 1) 0%, hsla(253.4545454545455, 92.17877094972067%, 64.90196078431373%, 0) 100%);
+}
+
+/* Basic Resets and Font */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(38, 40, 51, 0);
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: primary;
+    text-align: left;
+    background:background1;
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #31344b;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #31344b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #262833;
+}
+
+/* Tables, Images, and Forms */
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #525480;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+}
+
+/* Devansh Styling (dv prefix) */
+.dv-container {
     display: grid;
     grid-template-columns: 27% auto;
     grid-template-rows: 2fr auto 2fr;
 }
 
-.header {
+.dv-header {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
     background-color: aliceblue;
 }
 
-.content-bar {
+.dv-content-bar {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     background-color: #f0f0f0;
 }
 
-.content-bar ul {
+.dv-content-bar ul {
     list-style-type: none;
     padding-right: 2em;
     text-align: right;
 }
 
-.content-bar li {
+.dv-content-bar li {
     margin-bottom: 1em;
 }
 
-.content-bar li a {
+.dv-content-bar li a {
     text-decoration: none;
 }
 
-.block-chain-section {
+.dv-block-chain-section {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: #9d7e7e;
 }
 
-.content-col {
+.dv-content-col {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-.block-chain-item {
+.dv-block-chain-item {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: auto auto;
 }
 
-.head {
+.dv-head {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     background-color: #f8f8f8 !important;
 }
 
-.extra {
+.dv-extra {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     background-color: #0c8bda !important;
 }
 
-.bottom {
+.dv-bottom {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
     background-color: #ef23d4 !important;
 }
 
-.footer {
+.dv-footer {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
     background-color: #0af321;
 }
+
+/* Manjing Styles (mj prefix) */
+
+
+
+/* Aung Styles (ag prefix) */
+
+
+
+/* Joan  Styles (jo prefix) */
