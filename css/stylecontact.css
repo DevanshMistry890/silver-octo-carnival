@@ -221,6 +221,7 @@ legend {
 }
 /*----------------------- 
 ContactUs-General styling
+Manjing Hu
 ------------------------*/
 
 .contact-us-section {
@@ -377,7 +378,6 @@ Manjing Hu
 .contact-h-line-style-small {
   display: inline-flex;
   flex-wrap: nowrap;
-
   padding: 0.625rem 0.875rem;
   border: 1px solid var(--clr-neutral-700);
   font-size: var(--fs-400);
