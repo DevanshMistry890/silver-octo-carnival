@@ -249,8 +249,9 @@ ContactUs-General styling
   --clr-neutral-400: var(--primary);
   --clr-neutral-300: var(--white);
 
+  --clr-accent-500: var(--green);
   --clr-accent-400: var(--secondary);
-  --clr-accent-300: var(--green);
+  --clr-accent-300: var(--yellow);
 
   --clr-linear-400: var(--pink);
 
@@ -267,9 +268,15 @@ ContactUs-General styling
   --fw-300: 300;
 
   --box-shadow-focus: 0 0 2rem hsl(258, 93%, 36%);
+  --btn-linear-btn: Linear-gradient(
+    90deg,
+    var(--clr-linear-400),
+    var(--clr-accent-400),
+    var(--clr-linear-400)
+  );
   --btn-linear: Linear-gradient(
     135deg,
-    var(--clr-linear-400) 20%,
+    var(--clr-linear-400) 0%,
     var(--clr-accent-400) 100%
   );
   --backdrop-light: blur(2px) contrast(80%) brightness(200%);
@@ -313,27 +320,15 @@ ContactUs-General styling
   line-height: 2rem;
   /* color: var(--clr-neutral-700); */
 }
-
-.h-line {
-  display: inline-block;
-  padding: 0.625rem 0.875rem;
-  border: 1px solid var(--clr-accent-300);
-  font-size: var(--fs-400);
-  color: var(--clr-neutral-300);
-  border-radius: var(--radius-bigger);
-}
-.h-line:hover {
-  color: var(--clr-neutral-400);
-}
-
-/*-----------------------
-ContactUs-Utility classes
-Manjing Hu 
------------------------*/
 .contact-container {
   --flow-space: 2rem;
   padding: 5em 8% 5.625em;
 }
+/*-----------------------
+ContactUs-Utility classes
+Manjing Hu 
+-----------------------*/
+
 .flow-content > * + * {
   margin-top: var(--flow-space, var(--spacer));
 }
@@ -379,6 +374,46 @@ Manjing Hu
   color: var(--clr-neutral-400);
 }
 
+.contact-h-line-style-small {
+  display: inline-flex;
+  flex-wrap: nowrap;
+
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--clr-neutral-700);
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-300);
+  border-radius: var(--radius-bigger);
+}
+.contact-h-line-style-small:hover {
+  color: var(--clr-accent-500);
+  border: 1px solid var(--clr-accent-500);
+}
+
+.contact-h-line-style-small div {
+  font-size: var(--fs-400);
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.3rem;
+  color: var(--clr-neutral-300);
+}
+.contact-h-line-style-small div:hover {
+  color: var(--clr-accent-500);
+}
+.contact-h-line-style-long {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 var(--spacer);
+  border: 1px solid var(--clr-accent-500);
+  border-radius: var(--radius);
+}
+.contact-h-line-style-long > div:first-child {
+  height: 2rem;
+  width: 2rem;
+  color: var(--clr-accent-400);
+}
 .t-center {
   text-align: center;
 }
@@ -394,7 +429,50 @@ Manjing Hu
   text-align: center;
   justify-content: center;
 }
-.submit-btn {
+.contact-box {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  text-align: starts;
+  gap: 1.875rem;
+  max-width: minmax(400px, 80%);
+  font-weight: var(--fw-500);
+  cursor: pointer;
+}
+.contact-box:hover {
+  transform: translateY(-7px);
+}
+.contact-box h5 {
+  color: var(--clr-neutral-300);
+}
+.contact-box h5:hover {
+  color: var(--clr-accent-300);
+}
+
+.contact-box > div:first-child {
+  display: flex;
+  height: 3.8rem;
+  width: 3.8rem;
+}
+.contact-box > div:first-child svg {
+  font-size: var(--fs-400);
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--clr-neutral-300);
+}
+.contact-box > div:first-child:hover {
+  transform: scale(1.1) translate3d(9px, 0px, 0px);
+}
+.contact-box > div:last-child {
+  text-align: start;
+}
+.contact-box > div:last-child p {
+  line-height: 1rem;
+  width: fit-content;
+}
+.contact-submit-btn {
   display: inline-block;
   border: 0px;
   border-radius: var(--radius);
@@ -404,9 +482,17 @@ Manjing Hu
   min-width: fit-content;
   max-width: 30%;
 }
+.contact-submit-btn:hover {
+  filter: drop-shadow(0 2px 2px var(--clr-neutral-700));
+  color: var(--clr-accent-300);
+  background-position: right;
+}
 
-.contact-btn-style-light {
-  background: var(--btn-linear);
+.contact-btn-style-gradient {
+  background: var(--btn-linear-btn);
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 350ms;
   color: var(--clr-neutral-300);
   font-size: var(--fs-400);
   font-weight: var(--fw-500);
@@ -460,81 +546,16 @@ Manjing Hu
   background: var(--clr-neutral-500);
 }
 
-.box {
-  display: grid;
-  grid-template-columns: 5rem 1fr;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: center;
-  text-align: starts;
-  gap: 1.875rem;
-  max-width: minmax(400px, 80%);
-  cursor: pointer;
-}
-
-.box .box-text {
-  text-align: start;
-}
-.box h5 {
-  color: var(--clr-neutral-300);
-}
-.box p {
-  font-weight: var(--fw-500);
-}
-
-.box-icon {
-  display: flex;
-  height: 3.8rem;
-  width: 3.8rem;
-}
-.box-icon svg {
-  font-size: var(--fs-400);
-  height: 1.5rem;
-  width: 1.5rem;
-  color: var(--clr-neutral-300);
-}
-.box-icon:hover {
-  transform: scale(1.1) translate3d(9px, 0px, 0px);
-}
-.box-text p {
-  line-height: 1rem;
-  width: fit-content;
-}
-.box:hover {
-  transform: translateY(-7px);
-}
 /*-----------------------
  ContactUs-Section 3 
  ManjingHu
  -----------------------*/
 
-.detail-1,
-.detail-2 {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0 var(--spacer);
-  border: 1px solid var(--clr-accent-300);
-  border-radius: var(--radius);
-}
-
-.row-left {
-  height: 2rem;
-  width: 2rem;
-  color: var(--clr-accent-400);
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form form * {
   border: none;
   outline: none;
-  padding: var(--spacer);
-  background: var(--clr-neutral-300);
-  border-radius: var(--radius-smaller);
 }
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: var(--clr-neutral-700);
@@ -544,45 +565,41 @@ Manjing Hu
 .contact-form form:focus-within {
   box-shadow: var(--box-shadow-focus);
 }
-.contact-form form .submit-btn:hover {
-  filter: drop-shadow(0 5px 5px var(--clr-accent-400));
-  color: var(--clr-neutral-400);
-}
+
 .contact-services-form {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   max-width: 100%;
 }
-.contact-services-form label {
-  margin-bottom: 0.6rem;
-  font-weight: var(--fw-600);
-}
+
 .form-group {
-  /* 16rem-2*gap */
+  /* form.width:16rem-2*gap */
   --width-column--min: 14rem;
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
     minmax(var(--width-column--min), 1fr)
   );
+  align-items: center;
   column-gap: 0.5rem;
   margin-inline: 1rem;
 }
-.form-group-row {
-  grid-column: 1/ -1;
-  grid-template-columns: calc(var(--width-column--min) / 2) 1fr;
-}
-.form-group-select {
-  flex-direction: column;
-}
 
-.contact-services-form .submit-btn {
+.form-group > * + * {
+  padding: var(--input-padding, var(--spacer));
+  background: var(--clr-neutral-300);
+  border-radius: var(--radius-smaller);
+}
+.form-group label {
+  margin-bottom: 0.6rem;
+  font-weight: var(--fw-600);
+}
+.contact-services-form button {
   grid-column: 1 / -1;
   justify-self: center;
   width: 100%;
 }
-
 .contact-subscribe-bottom form {
   display: flex;
   max-width: 100%;
@@ -601,9 +618,21 @@ Manjing Hu
 }
 
 @media (min-width: 42rem) {
+  .form-group-row {
+    grid-column: 1/ -1;
+    grid-template-columns: calc(var(--width-column--min) / 2) 1fr;
+    max-width: 100%;
+    align-items: baseline;
+  }
+  .form-group {
+    --input-padding: 0.5rem;
+    /* 16rem-2*gap:14 - 4*padding */
+    --width-column--min: 12rem;
+  }
   .contact-subscribe-bottom input {
-    width: 40ch;
+    width: 38ch;
     padding: var(--spacer);
+    margin-left: 1rem;
   }
   .contact-subscribe-bottom form {
     display: inline-block;
