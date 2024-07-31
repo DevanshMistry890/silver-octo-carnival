@@ -387,6 +387,10 @@ legend {
 *************
 ***********************/
 /* Aung Styles (ag prefix) */
+.ag-wrapper{
+    height: auto;
+}
+
 
 
 
