@@ -140,9 +140,6 @@ body {
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat;
-  cursor:
-    url("./../assets/dv-pointer/pointer.svg") 12 12,
-    auto;
 }
 
 /* Typography */
@@ -166,16 +163,10 @@ p {
 a {
   color: #31344b;
   text-decoration: none;
-  cursor:
-    url("./../assets/dv-pointer/pointer2.svg") 12 12,
-    pointer;
 }
 
 a:hover {
   color: #262833;
-  cursor:
-    url("./../assets/dv-pointer/pointer2.svg") 12 12,
-    pointer;
 }
 
 /* Tables, Images, and Forms */
@@ -280,6 +271,18 @@ legend {
   }
 }
 
+.dv-cursor {
+  cursor:
+    url("./../assets/dv-pointer/pointer.svg") 12 12,
+    auto;
+}
+
+.dv-cursor2 {
+  cursor:
+    url("./../assets/dv-pointer/pointer2.svg") 12 12,
+    pointer;
+}
+
 .dv-container {
   grid-template-columns: 27% auto;
 }
@@ -328,6 +331,9 @@ legend {
   /* Make the link block-level for padding to work */
   transition: color 0.2s ease;
   /* Smooth color transition */
+  cursor:
+    url("./../assets/dv-pointer/pointer2.svg") 12 12,
+    pointer;
 }
 
 /* Hover effect for links */
