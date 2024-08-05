@@ -12,49 +12,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/glassmorphism.css" type="text/css" />
 </head>
-<div class="base-container">
 
-  <body id="contactUs" class="contactUs">
-    <header>
-
+<body id="contactUs" class="contactUs">
+  <div class="contact-base-container">
+    <header class="glassmorphism a-center ">
+      <a href="#" class="logo"><img src="assets/manjing-img/logo_dark.png" alt="logo" /></a>
+      <nav>
+        <ul class="navigation-list a-j-center">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blockchain Technology</a></li>
+          <li><a href="#">Cryptocurrency</a></li>
+          <li><a href="#">Use Cases</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="a-center">
+        <a href="#" class="nav-btn">
+          <span>Let's Talk</span>
+        </a>
+      </div>
     </header>
 
-    <div class="contact-wrapper contact-us-section flow-content">
+    <div class="contact-wrapper contact-us-section flow-content t-center">
       <!-- section1 -->
-      <section class="contact-title t-center" id="contact-title">
+      <section class=" contact-title t-center contact-container" id="contact-title">
         <div class="contact-title-text">
-          <a href="#" class="contact-h-line-style-small a-center">
-            <!-- <i class="ri-shining-2-line"></i> -->
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M16 8L23.5 12L16 16L12 23.5L8 16L0.5 12L8 8L12 0.5L16 8ZM19.25 12L14.5217 9.47826L12 4.75L9.47826 9.47826L4.75 12L9.47826 14.5217L12 19.25L14.5217 14.5217L19.25 12Z">
-                </path>
-              </svg>
-            </div>
-            <span>Contact Us</span>
-          </a>
           <h1>
             Contact
             <span class="linear-text">Us</span>
           </h1>
-          <h4>We are focusing on collecting Blockchian information</h4>
+          <h4>We are focusing on collecting Blockchain information</h4>
         </div>
       </section>
       <!-- section2 -->
       <section class="grid-1-2-col contact-container " id="contact-in-touch">
         <div class="contact-in-touch-left flow-content">
           <div class="h-text flow-content">
-            <a href="#" class="contact-h-line-style-small">
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M16 8L23.5 12L16 16L12 23.5L8 16L0.5 12L8 8L12 0.5L16 8ZM19.25 12L14.5217 9.47826L12 4.75L9.47826 9.47826L4.75 12L9.47826 14.5217L12 19.25L14.5217 14.5217L19.25 12Z">
-                  </path>
-                </svg>
-              </div>
-              <span>Methods</span>
-            </a>
+
             <h2>Get in <span class="linear-text">Touch</span></h2>
             <h4>
               Feel free to contact us for further assistance or information during our business
@@ -103,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="contact-in-touch-right ">
+        <div class="contact-in-touch-right glassmorphism">
           <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.0987953372105!2d-80.52058918884818!3d43.47940856353439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf31d0cec9491%3A0x8bf5f60c306d2207!2sConestoga%20College%20Waterloo%20Campus!5e0!3m2!1sen!2sca!4v1721860146964!5m2!1sen!2sca"
@@ -113,18 +107,9 @@
         </div>
       </section>
       <!-- section3 -->
-      <section class="grid-1-2-col  contact-container a-center contact-form flow-content" id="contact-services">
-        <div class="contact-services-left flow-content">
-          <a href="#" class="contact-h-line-style-small a-center">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M16 8L23.5 12L16 16L12 23.5L8 16L0.5 12L8 8L12 0.5L16 8ZM19.25 12L14.5217 9.47826L12 4.75L9.47826 9.47826L4.75 12L9.47826 14.5217L12 19.25L14.5217 14.5217L19.25 12Z">
-                </path>
-              </svg>
-            </div>
-            <span>More</span>
-          </a>
+      <section class="grid-1-2-col  contact-container a-j-center contact-form flow-content" id="contact-services">
+        <div class="contact-services-left flow-content glassmorphism a-j-center">
+
           <h2>Subscribe to Our <br /><span class="linear-text">Newsletter</span></h2>
           <div class="contact-h-line-style-long">
             <div>
@@ -141,19 +126,12 @@
           <div class="contact-subscribe-bottom">
             <form class="subscribe-form glassmorphism">
               <input type="email" name="subscribe-email" id="sbuscribe-email" class="contact-bg-transparent"
-                placeholder="Enter Your Email Address" />
+                placeholder="Enter Email Address" />
               <button type="submit" class="contact-submit-btn contact-btn-style-gradient">
                 Submit
               </button>
             </form>
           </div>
-          <!-- <div class="contact-social-icons">
-                <a href="#"><i class="ri-dribbble-line"></i></a>
-                <a href="#"><i class="ri-behance-fill"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-pinterest-fill"></i></a>
-              </div> -->
         </div>
         <div class="contact-services-right flow-content">
 
@@ -223,9 +201,9 @@
               <label for="hearAbout">How did you hear about us?</label>
               <select id="hearAbout">
                 <option value="friends">Friends</option>
-                <option value="Instructor">instructor</option>
-                <option value="socialMedia">social media</option>
-                <option value="noIdea">no idea</option>
+                <option value="Instructor">Instructor</option>
+                <option value="socialMedia">Social Media</option>
+                <option value="noIdea">No Idea</option>
               </select><br>
             </div>
             <div class="form-group form-group-row a-center">
@@ -245,12 +223,41 @@
         </div>
       </section>
     </div>
-    <footer>
+
+    <footer id="footer" class="glassmorphism">
+      <div class="col col1">
+        <h3>BlockchainSite</h3>
+        <p>Made By <span>❤</span>Responsive Group 1</p>
+        <div class="social">
+          <a href="#" target="_blank" class="link"><img src="assets/manjing-img/instagram-alt-logo-24.png"
+              alt="instagram icon" /></a>
+          <a href="#" target="_blank" class="link"><img src="assets/manjing-img/facebook-circle-logo-24.png"
+              alt="facebook icon" /></a>
+          <a href="#" target="_blank" class="link"><img src="assets/manjing-img/youtube-logo-24.png"
+              alt="youtube icon" /></a>
+        </div>
+        <div class="copyrights">
+          <a href="https://storyset.com/web" target="_blank">Web illustrations by Storyset</a>
+          <p>2024 © Conestoga - Web Development - 24S - Responsive Group 1</p>
+        </div>
+      </div>
+      <div class="col col2 ">
+        <a href="#">Home</a>
+        <a href="#">Blockchain Technology</a>
+        <a href="#">Cryptocurrency</a>
+        <a href="#">Use Cases</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="col col3 ">
+        <p>Overview</p>
+        <p>Info</p>
+        <p>Type Table</p>
+        <p>Cases</p>
+        <p>Subscribe</p>
+      </div>
 
     </footer>
-    <!-- typed -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  </body>
-</div>
+  </div>
+</body>
 
 </html>
