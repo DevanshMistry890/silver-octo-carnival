@@ -869,109 +869,171 @@ Manjing Hu
 ********* 
 *************
 ***********************/
-/* Aung Styles (ag prefix) */
+/* start Aung Styles (ag prefix) */
 .ag-use-cases {
-    --spacer: 1rem;
-    --spacer-inline: 10%;
-    --radius: 1rem;
-    --radius-bigger: 1.7rem;
-    --radius-smaller: 0.6rem;
-    --clr-neutral-900: var(--black);
-    --clr-neutral-800: var(--dark);
-    --clr-neutral-700: var(--gray-800);
-    --clr-neutral-600: var(--gray-600);
-    --clr-neutral-500: var(--gray-500);
-  
-    --clr-neutral-400: var(--primary);
-    --clr-neutral-300: var(--white);
-  
-    --clr-accent-500: var(--green);
-    --clr-accent-400: var(--secondary);
-    --clr-accent-300: var(--yellow);
-  
-    --clr-linear-400: var(--pink);
-  
-    --fs-700: 2.25rem;
-    --fs-600: 2rem;
-    --fs-500: 1.25rem;
-    --fs-400: 1.125rem;
-    --fs-300: 0.9375rem;
-  
-    --fw-700: 700;
-    --fw-600: 600;
-    --fw-500: 500;
-    --fw-400: 400;
-    --fw-300: 300;
-  
-    --box-shadow-focus: 0 0 2rem hsl(258, 93%, 36%);
-    --btn-linear-btn: Linear-gradient(
-      90deg,
-      var(--clr-linear-400),
-      var(--clr-accent-400),
-      var(--clr-linear-400)
-    );
-    --btn-linear: Linear-gradient(
-      135deg,
-      var(--clr-linear-400) 0%,
-      var(--clr-accent-400) 100%
-    );
-    --backdrop-light: blur(2px) contrast(80%) brightness(200%);
-    --backdrop-dark: blur(10px) contrast(50%) brightness(120%);
-  
-    --h1-font: 7rem;
-    --h2-font: 4.8rem;
-    --h3-font: 2.6rem;
+  --spacer: 1rem;
+  --spacer-inline: 10%;
+  --radius: 1rem;
+  --radius-bigger: 1.7rem;
+  --radius-smaller: 0.6rem;
+  --clr-neutral-900: var(--black);
+  --clr-neutral-800: var(--dark);
+  --clr-neutral-700: var(--gray-800);
+  --clr-neutral-600: var(--gray-600);
+  --clr-neutral-500: var(--gray-500);
+
+  --clr-neutral-400: var(--primary);
+  --clr-neutral-300: var(--white);
+
+  --clr-accent-500: var(--green);
+  --clr-accent-400: var(--secondary);
+  --clr-accent-300: var(--yellow);
+
+  --clr-linear-400: var(--pink);
+
+  --fs-700: 2.25rem;
+  --fs-600: 2rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1.125rem;
+  --fs-300: 0.9375rem;
+
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+  --fw-400: 400;
+  --fw-300: 300;
+
+  --box-shadow-focus: 0 0 2rem hsl(258, 93%, 36%);
+  --btn-linear-btn: Linear-gradient(
+    90deg,
+    var(--clr-linear-400),
+    var(--clr-accent-400),
+    var(--clr-linear-400)
+  );
+  --btn-linear: Linear-gradient(
+    135deg,
+    var(--clr-linear-400) 0%,
+    var(--clr-accent-400) 100%
+  );
+  --backdrop-light: blur(2px) contrast(80%) brightness(200%);
+  --backdrop-dark: blur(10px) contrast(50%) brightness(120%);
+
+  --h1-font: 7rem;
+  --h2-font: 4.8rem;
+  --h3-font: 2.6rem;
+}
+
+.ag-main h1 {
+  font-size: calc(var(--h1-font) / 1.8);
+  font-family: var(--font-family-1);
+}
+.ag-main h2 {
+  font-size: calc(var(--h2-font) / 2);
+  font-family: var(--font-family-1);
+}
+.ag-main h4,
+.ag-main h6 {
+  font-size: var(--fs-300);
+  margin-block: 0.5rem;
+  font-family: var(--font-family-1);
+}
+.ag-main h5 {
+  font-size: var(--fs-500);
+  font-family: var(--font-family-1);
+}
+@media (min-width: 1138px) {
+  .ag-main h1 {
+    font-size: calc(var(--h1-font) / 1.3);
   }
+}
+@media (min-width: 42rem) {
+  .ag-main h2 {
+    font-size: var(--h2-font);
+  }
+  .ag-main h4,
+  .ag-main h6 {
+    font-size: var(--fs-500);
+  }
+  .ag-main h5 {
+    font-size: var(--fs-600);
+  }
+}
 
 .ag-main{
-    width:85%;
-    height: auto;
-    margin:auto;
-    grid-row-gap: 40px;
-    grid-column-gap: 40px;
+  width:85%;
+  height: auto;
+  margin:auto;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
+  text-align: justify;
 }
 
 .ag-use-cases-title{
-    text-align: center;
+  text-align: center;
 }
 
 .ag-header  { grid-area: use-cases-header; }
 .ag-main    { grid-area: use-cases-main; }
 .ag-footer  { grid-area: use-cases-footer; }
 
+/* .ag-use-cases {
+  display: grid;
+  grid-template-rows: max(16rem, 50vh) auto 1fr;
+} */
+/* @media (min-width: 42rem) {
+  .ag-use-cases {
+    grid-template-rows: 4em auto 1fr;
+  }
+} */
 
-.ag-use-cases{ display: grid;
-            grid-template-columns: 33% auto 33%;
-            grid-template-rows: 150px auto 300px;
-            grid-template-areas:
-                "use-cases-header  use-cases-header  use-cases-header"
-                "use-cases-main    use-cases-main    use-cases-main"
-                "use-cases-footer  use-cases-footer  use-cases-footer" ; 
-            }
-
-.ag-use-cases h1 {
-    font-size: var(--h1-font);
-    font-family: var(--font-family-1);
+.ag-use-cases{
+  background: var(--background1);
+  max-width: 100%;
 }
-.ag-use-cases h2 {
-    font-size: var(--h2-font);
-    font-family: var(--font-family-1);
+
+.ag-use-cases p {
+  line-height: 2rem;
+}
+
+.ag-use-cases{ 
+  display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: max(16rem, 50vh) auto 1fr;
+          grid-template-areas:
+              "use-cases-header  use-cases-header  use-cases-header"
+              "use-cases-main    use-cases-main    use-cases-main"
+              "use-cases-footer  use-cases-footer  use-cases-footer" ; 
+          }
+
+@media (min-width: 42rem) {
+  .ag-use-cases {
+    grid-template-rows: 4em auto 1fr;
+  }
 }
 
 .ag-use-cases-finance{
-    height: 400px;
+  height: auto;
 }
 .ag-use-cases-supply-chain{
-    height: 400px;
+  height: auto;
 }
 .ag-use-cases-identity-management{
-    height: 400px;
+  height: auto;
 }
 .ag-use-cases-healthcare-and-voting{
-    height: 200px;
+  height: auto;
 }
 .ag-use-cases-additional{
-    height: 200px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.ag-align-center{
+  text-align: center;
+}
+
+.ag-use-case-img{
+  max-width: 100%;
 }
 
 .ag-use-cases-title{ grid-area: ag-use-cases-title; }
@@ -982,7 +1044,22 @@ Manjing Hu
 .ag-use-cases-healthcare-and-voting{ grid-area: ag-use-cases-healthcare-and-voting; }
 .ag-use-cases-additional{ grid-area: ag-use-cases-additional; }
 
-.ag-main{ display: grid;
+.ag-main{ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "ag-use-cases-title                  ag-use-cases-title                  ag-use-cases-title"
+    "ag-use-cases-introduction           ag-use-cases-introduction           ag-use-cases-introduction"
+    "ag-use-cases-finance                ag-use-cases-finance                ag-use-cases-finance"
+    "ag-use-cases-supply-chain           ag-use-cases-supply-chain           ag-use-cases-supply-chain"
+    "ag-use-cases-identity-management    ag-use-cases-identity-management    ag-use-cases-identity-management"
+    "ag-use-cases-healthcare-and-voting  ag-use-cases-healthcare-and-voting  ag-use-cases-healthcare-and-voting"
+    "ag-use-cases-additional             ag-use-cases-additional             ag-use-cases-additional";
+}
+
+@media (min-width: 42rem) {
+  .ag-main{ display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
@@ -991,7 +1068,58 @@ Manjing Hu
         "ag-use-cases-finance                ag-use-cases-supply-chain           ag-use-cases-identity-management"
         "ag-use-cases-healthcare-and-voting  ag-use-cases-healthcare-and-voting  ag-use-cases-healthcare-and-voting"
         "ag-use-cases-additional             ag-use-cases-additional             ag-use-cases-additional";
-    }
+    }  
+}
+
+#ag-use-cases-healthcare-and-voting-title{ grid-area: ag-use-cases-healthcare-and-voting-title; }
+#ag-use-cases-healthcare-title{ grid-area: ag-use-cases-healthcare-title; }
+#ag-healthcare-img{ grid-area: ag-healthcare-img; }
+#ag-healthcare-paragraph{ grid-area: ag-healthcare-paragraph; }
+#ag-use-cases-voting-title{ grid-area: ag-use-cases-voting-title; }
+#ag-voting-img{ grid-area: ag-voting-img; }
+#ag-voting-paragraph{ grid-area: ag-voting-paragraph; }
+/* #ag-use-cases-healthcare-inline-wrapper{ grid-area: ag-use-cases-healthcare-inline-wrapper; } */
+/* #ag-use-cases-additional{ grid-area: ag-use-cases-additional; } */
+
+.ag-use-cases-healthcare-and-voting{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas:
+      "ag-use-cases-healthcare-and-voting-title"
+      "ag-use-cases-healthcare-title"
+      "ag-healthcare-img"
+      "ag-healthcare-paragraph"
+      "ag-use-cases-voting-title"
+      "ag-voting-img"
+      "ag-voting-paragraph";
+}
+
+@media (min-width: 42rem) {
+  #ag-use-cases-healthcare-and-voting-title { grid-area: ag-maintitle; }
+  #ag-use-cases-healthcare-title { grid-area: ag-subtitle1; }
+  #ag-healthcare-img { grid-area: ag-img1; }
+  #ag-healthcare-paragraph { grid-area: ag-text1; }
+  #ag-use-cases-voting-title { grid-area: ag-subtitle2; }
+  #ag-voting-img { grid-area: ag-img2; }
+  #ag-voting-paragraph { grid-area: ag-text2; }
+
+  .ag-use-cases-healthcare-and-voting {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1rem;
+    grid-template-areas:
+      "ag-maintitle    ag-maintitle"
+      "ag-subtitle1    ag-subtitle1"
+      "ag-img1         ag-text1"
+      "ag-subtitle2    ag-subtitle2"
+      "ag-img2         ag-text2";
+  }
+}
+
+/* end Aung Styles (ag prefix) */
+
 
 /* ***************************
 *******************
