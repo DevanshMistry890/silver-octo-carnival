@@ -1132,7 +1132,7 @@ Manjing Hu
 .jo-base-container { 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em auto 1fr;
+  grid-template-rows: 4em auto 1fr;
   height: auto;
 }
 
@@ -1357,7 +1357,7 @@ background-color: hsla(0, 0%, 100%, 0.2);
   
 @media only screen and (min-width: 670px) and (max-width: 999px) { 
   .jo-base-container { 
-    grid-template-rows: 3em auto 1fr;
+    grid-template-rows: 4em auto 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -1452,7 +1452,7 @@ background-color: hsla(0, 0%, 100%, 0.2);
 
 @media only screen and (min-width: 1000px) and (max-width: 1388px){ 
   .jo-base-container { 
-    grid-template-rows: 3em auto 1fr;
+    grid-template-rows: 4em auto 1fr;
     grid-template-columns: 1fr;
   }
   .jo-title { 
