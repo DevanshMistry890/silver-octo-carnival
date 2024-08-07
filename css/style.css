@@ -616,7 +616,11 @@ Manjing Hu
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.contact-cursor {
+  cursor:
+    url("./../assets/dv-pointer/pointer.svg") 12 12,
+    auto;
+}
 .contact-bg-accent {
   background: var(--btn-linear);
 }
