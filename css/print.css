@@ -1,0 +1,44 @@
+@media print {
+    body, .base-container, .dv-container {
+        background: white;
+    }
+
+    header, footer {
+        display: none;
+    }
+
+    .dv-content-bar {
+        display: none;
+    }
+
+    .dv-img-container, .dv-img-container img {
+        display: none;
+    }
+
+    .dv-block-chain-item {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+
+    @page {
+        margin: 20mm;
+    }
+    
+    h2 {
+        font-size: 16pt;
+    }
+
+    p {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    .dv-block-chain-section::after {
+        content: "Printed from Blockchain Page | RSD Group 1";
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 10pt;
+        color: black;
+    }
+}

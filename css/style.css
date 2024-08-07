@@ -225,7 +225,7 @@ legend {
 /* Comman styles */
 .base-container {
   display: grid;
-  grid-template-rows: 2fr auto 2fr;
+  grid-template-rows: 4em auto 1fr;
 }
 
 /* ***************************
@@ -303,6 +303,7 @@ legend {
   animation: dv-slideInSide 0.7s ease-out 0.2s forwards;
   transform: translateX(-100%);
   opacity: 0;
+  margin-top: 5vw;
 }
 
 /* Navigation list styling */
@@ -320,26 +321,17 @@ legend {
   position: relative;
 }
 
-/* Link styling */
 .dv-content-bar li a {
   text-decoration: none;
-  color: #333;
-  /* Default link color */
-  padding: 10px 0;
-  /* Padding to give space for the animated bar */
-  display: block;
-  /* Make the link block-level for padding to work */
+  color: #333;  
+  padding: 10px 0;  
+  display: block;  
   transition: color 0.2s ease;
-  /* Smooth color transition */
-  cursor:
-    url("./../assets/dv-pointer/pointer2.svg") 12 12,
-    pointer;
+  cursor: url("./../assets/dv-pointer/pointer2.svg") 12 12, pointer;
 }
 
-/* Hover effect for links */
 .dv-content-bar li a:hover {
   color: var(--indigo);
-  /* Color on hover */
 }
 
 /* Animated bar styling */
@@ -361,6 +353,11 @@ legend {
 .dv-content-bar li:hover::after {
   width: 100%;
   left: 0;
+}
+.dv-block-chain-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .dv-block-chain-item {
@@ -1132,7 +1129,7 @@ Manjing Hu
 .jo-base-container { 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 4em auto 1fr;
+  grid-template-rows: 3em auto 1fr;
   height: auto;
 }
 
@@ -1217,7 +1214,7 @@ Manjing Hu
   height: 100%;
 }
 
-.jo-table tr:nth-child(even){ 
+tr:nth-child(even){ 
 background-color: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -1357,7 +1354,7 @@ background-color: hsla(0, 0%, 100%, 0.2);
   
 @media only screen and (min-width: 670px) and (max-width: 999px) { 
   .jo-base-container { 
-    grid-template-rows: 4em auto 1fr;
+    grid-template-rows: 3em auto 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -1452,7 +1449,7 @@ background-color: hsla(0, 0%, 100%, 0.2);
 
 @media only screen and (min-width: 1000px) and (max-width: 1388px){ 
   .jo-base-container { 
-    grid-template-rows: 4em auto 1fr;
+    grid-template-rows: 3em auto 1fr;
     grid-template-columns: 1fr;
   }
   .jo-title { 
