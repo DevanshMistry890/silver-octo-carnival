@@ -1217,7 +1217,7 @@ Manjing Hu
   height: 100%;
 }
 
-tr:nth-child(even){ 
+.jo-table tr:nth-child(even){ 
 background-color: hsla(0, 0%, 100%, 0.2);
 }
 
