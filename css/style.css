@@ -1853,6 +1853,11 @@ footer a {
   justify-content: center;
   flex-wrap: wrap;
 }
+.home-cursor {
+  cursor:
+    url("./../assets/dv-pointer/pointer.svg") 12 12,
+    auto;
+}
 .homePage h1 {
   --h1-font: 7rem;
   font-size: calc(var(--h1-font) / 3.6);
@@ -2037,6 +2042,9 @@ footer a {
 }
 .home-box:hover {
   transform: translateY(-7px);
+  cursor:
+    url("./../assets/dv-pointer/pointer.svg") 12 12,
+    auto;
 }
 .home-box h5 {
   color: var(--secondary);
