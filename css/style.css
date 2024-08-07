@@ -936,10 +936,17 @@ Manjing Hu
   --h3-font: 2.6rem;
 }
 
-.ag-main h1 {
+/* .ag-main h1 {
   font-size: calc(var(--h1-font) / 1.8);
   font-family: var(--font-family-1);
+} */
+
+.ag-main h1 {
+  font-size: calc(var(--h1-font) / 1.3);
+  font-family: var(--font-family-1);
+  font-size: 7rem;
 }
+
 .ag-main h2 {
   font-size: calc(var(--h2-font) / 2);
   font-family: var(--font-family-1);
@@ -958,8 +965,20 @@ Manjing Hu
   .ag-main h1 {
     font-size: calc(var(--h1-font) / 1.3);
   }
+  .ag-main h1 {
+    font-size: calc(var(--h1-font) / 1.3);
+    font-family: var(--font-family-1);
+    font-size: 7rem;
+  }
 }
 @media (min-width: 42rem) {
+  .ag-main h1 {
+    /* font-size: calc(var(--h1-font) / 1.3); */
+    font-size: calc(var(--h1-font) / 1.1);
+    font-family: var(--font-family-1);
+    font-size: 7rem;
+  }
+
   .ag-main h2 {
     font-size: var(--h2-font);
   }
@@ -983,6 +1002,7 @@ Manjing Hu
 
 .ag-use-cases-title {
   text-align: center;
+  padding: 1rem 10% 1rem;
 }
 
 .ag-header {
@@ -1024,9 +1044,20 @@ Manjing Hu
     "use-cases-footer  use-cases-footer  use-cases-footer";
 }
 
+.ag-use-cases-title {
+  padding: 3rem 2% 1rem;
+}
+
+
 @media (min-width: 42rem) {
   .ag-use-cases {
     grid-template-rows: 4em auto 1fr;
+  }
+
+  .ag-use-cases-title {
+    padding: 6rem 10% 1rem;
+    /* display: flex; */
+    justify-content: center;
   }
 }
 
@@ -1080,7 +1111,8 @@ Manjing Hu
 .ag-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto auto auto;
+  /* grid-template-rows: auto auto auto auto auto; */
+  grid-template-rows: 1fr auto auto auto auto;
   grid-template-areas:
     "ag-use-cases-title                  ag-use-cases-title                  ag-use-cases-title"
     "ag-use-cases-introduction           ag-use-cases-introduction           ag-use-cases-introduction"
