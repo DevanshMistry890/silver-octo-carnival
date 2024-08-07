@@ -1193,7 +1193,7 @@ Manjing Hu
 .jo-base-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3em auto 1fr;
+  grid-template-rows: 4em auto 1fr;
   height: auto;
 }
 
@@ -1278,7 +1278,7 @@ Manjing Hu
   height: 100%;
 }
 
-tr:nth-child(even) {
+.jo-table tr:nth-child(even) {
   background-color: hsla(0, 0%, 100%, 0.2);
 }
 
