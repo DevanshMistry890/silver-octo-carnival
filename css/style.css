@@ -1309,7 +1309,7 @@ tr:nth-child(even) {
 }
 
 .jo-table col:nth-child(1) {
-  width: 20px;
+  width: 30px;
   min-width: auto;
 }
 
