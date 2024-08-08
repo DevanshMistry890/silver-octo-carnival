@@ -10,3 +10,16 @@
     overflow: hidden; /* Ensure content stays within bounds */
     z-index: 1;
 }
+
+.glassmorphism-2 {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(12px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3); /* Inset shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    overflow: hidden; /* Ensure content stays within bounds */
+    z-index: 1;
+}
