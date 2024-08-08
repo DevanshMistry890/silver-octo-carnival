@@ -1,0 +1,142 @@
+@media (max-width: 600px) {
+    .base-container {
+        grid-template-rows: auto;
+    }
+
+    .dv-content {
+        grid-template-columns: 1fr;
+    }
+
+    .dv-title {
+        font-size: 1.5rem;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .dv-content-bar {
+        display: none;
+    }
+
+    .dv-block-chain-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 0;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .dv-img-container {
+        display: none;
+    }
+
+    .dv-head h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .dv-head p {
+        text-align: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .dv-extra {
+        grid-row: auto;
+        grid-column: auto;
+        text-align: center;
+    }
+
+    .dv-bottom {
+        text-align: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .dv-footer {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .dv-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .dv-title {
+        font-size: 3rem;
+        padding: 2vw;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .dv-content-bar {
+        display: none;
+    }
+
+    .dv-block-chain-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 0;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .dv-img-container {
+        width: 100%;
+        height: auto;
+        max-width: 35vw;
+    }
+
+    .dv-head h2 {
+        font-size: 2rem;
+    }
+
+    .dv-extra {
+        grid-row: auto;
+        grid-column: auto;
+        text-align: center;
+    }
+
+    .dv-bottom {
+        text-align: center;
+    }
+
+    .dv-footer {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+/* Large Screens (desktops above 1024px) */
+@media (min-width: 1025px) {
+    .dv-content {
+        grid-template-columns: 27vw auto;
+        grid-template-rows: 23vw auto;
+    }
+
+    .dv-title {
+        font-size: 5vw;
+        padding: 1vw;
+    }
+
+    .dv-content-bar {
+        padding-right: 2.5vw;
+        font-size: 1.5vw;
+        justify-content: flex-end;
+    }
+
+    .dv-block-chain-item {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto;
+        font-size: 1.5vw;
+    }
+
+    .dv-img-container {
+        width: 25vw;
+        height: auto;
+    }
+}
