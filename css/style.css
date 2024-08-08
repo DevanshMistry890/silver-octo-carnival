@@ -1197,6 +1197,10 @@ Manjing Hu
   line-height: 2rem;
 }
 
+.jo-base-container p {
+  line-height: 2rem;
+}
+
 .jo-container {
   padding: 5em 8% 5.625em;
   display: grid;
