@@ -2178,9 +2178,6 @@ footer a {
 .home-box h5 {
   color: var(--secondary);
 }
-.home-box h5:hover {
-  color: var(--yellow);
-}
 
 .home-box > div:last-child p {
   line-height: 1rem;
