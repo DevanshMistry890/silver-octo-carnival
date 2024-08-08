@@ -1194,6 +1194,7 @@ Manjing Hu
   grid-template-columns: 1fr;
   grid-template-rows: 4em auto 1fr;
   height: auto;
+  line-height: 2rem;
 }
 
 .jo-container {
