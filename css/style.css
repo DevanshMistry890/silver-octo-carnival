@@ -783,6 +783,12 @@ legend {
   align-items: center;
 }
 
+.a-j-t-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .contact-box {
   display: grid;
   grid-template-rows: 1fr 1fr;
