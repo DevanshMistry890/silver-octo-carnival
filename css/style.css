@@ -1043,24 +1043,9 @@ legend {
 /* start Aung Styles (ag prefix) */
 .ag-use-cases {
   --spacer: 1rem;
-  --spacer-inline: 10%;
+
   --radius: 1rem;
-  --radius-bigger: 1.7rem;
   --radius-smaller: 0.6rem;
-  --clr-neutral-900: var(--black);
-  --clr-neutral-800: var(--dark);
-  --clr-neutral-700: var(--gray-800);
-  --clr-neutral-600: var(--gray-600);
-  --clr-neutral-500: var(--gray-500);
-
-  --clr-neutral-400: var(--primary);
-  --clr-neutral-300: var(--white);
-
-  --clr-accent-500: var(--green);
-  --clr-accent-400: var(--secondary);
-  --clr-accent-300: var(--yellow);
-
-  --clr-linear-400: var(--pink);
 
   --fs-700: 2.25rem;
   --fs-600: 2rem;
@@ -1076,14 +1061,12 @@ legend {
 
   --box-shadow-focus: 0 0 2rem hsl(258, 93%, 36%);
   --btn-linear-btn: Linear-gradient(90deg,
-      var(--clr-linear-400),
-      var(--clr-accent-400),
-      var(--clr-linear-400));
+      var(--pink),
+      var(--secondary),
+      var(--pink));
   --btn-linear: Linear-gradient(135deg,
-      var(--clr-linear-400) 0%,
-      var(--clr-accent-400) 100%);
-  --backdrop-light: blur(2px) contrast(80%) brightness(200%);
-  --backdrop-dark: blur(10px) contrast(50%) brightness(120%);
+      var(--pink) 0%,
+      var(--secondary) 100%);
 
   --h1-font: 7rem;
   --h2-font: 4.8rem;
@@ -1096,9 +1079,9 @@ legend {
 } */
 
 .ag-main h1 {
-  font-size: calc(var(--h1-font) / 1.3);
+  font-size: calc(var(--h1-font) / 1.8);
   font-family: var(--font-family-1);
-  font-size: 7rem;
+  /* font-size: 7rem; */
 }
 
 .ag-main h2 {
@@ -1119,14 +1102,14 @@ legend {
 }
 
 @media (min-width: 1138px) {
-  .ag-main h1 {
+  /* .ag-main h1 {
     font-size: calc(var(--h1-font) / 1.3);
-  }
+  } */
 
   .ag-main h1 {
     font-size: calc(var(--h1-font) / 1.3);
     font-family: var(--font-family-1);
-    font-size: 7rem;
+    /* font-size: 7rem; */
   }
 }
 
@@ -1135,7 +1118,7 @@ legend {
     /* font-size: calc(var(--h1-font) / 1.3); */
     font-size: calc(var(--h1-font) / 1.1);
     font-family: var(--font-family-1);
-    font-size: 7rem;
+    /* font-size: 7rem; */
   }
 
   .ag-main h2 {
