@@ -748,16 +748,7 @@ legend {
   -webkit-text-fill-color: transparent;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
+
 
 .contact-cursor {
   cursor:
@@ -873,6 +864,17 @@ legend {
 .contact-box>div:last-child p {
   line-height: 1rem;
   width: auto
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .contact-submit-btn {
