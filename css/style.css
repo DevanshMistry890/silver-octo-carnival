@@ -497,6 +497,10 @@ legend {
     padding-right: 5vw;
   }
 
+  .dv-bottom ul {
+    list-style-type: none;
+  }
+
   .dv-footer {
     grid-column: 1;
     grid-row: auto;
@@ -548,7 +552,10 @@ legend {
   .dv-bottom {
     text-align: center;
   }
-
+  .dv-bottom ul {
+    list-style-type: none;
+  }
+  
   .dv-footer {
     grid-column: 1;
     grid-row: auto;
@@ -781,6 +788,12 @@ legend {
 .a-j-center {
   justify-content: center;
   align-items: center;
+}
+
+.a-j-t-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .contact-box {
@@ -2383,6 +2396,16 @@ footer a {
   font-weight: var(--fw-500);
   cursor: pointer;
   width: 80%;
+  animation: dv-slideInTop 0.7s ease-out 0.3s forwards;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.home-box img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; 
+  object-fit: cover;
 }
 
 @media (min-width: 42rem) {
