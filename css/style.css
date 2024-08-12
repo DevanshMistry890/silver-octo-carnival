@@ -452,7 +452,7 @@ legend {
   }
 
   .dv-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transform: translateX(0);
     opacity: 1;
   }
@@ -1533,7 +1533,7 @@ tr:nth-child(even) {
   min-width: auto;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
   .jo-base-container {
     grid-template-rows: max(21rem, 40vh) auto 1fr;
     grid-template-columns: 1fr;
@@ -1625,7 +1625,7 @@ tr:nth-child(even) {
 }
 
 
-@media only screen and (max-width: 670px) and (min-width: 381px) {
+@media only screen and (max-width: 670px) and (min-width: 500px) {
   .jo-base-container {
     grid-template-rows: max(21rem, 40vh) auto 1fr;
     grid-template-columns: 1fr;
